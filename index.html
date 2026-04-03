@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>₹999 का One-to-One Consultation - Rajneesh Agarwal | Cafe Business Expert</title>
+    <meta name="description" content="अपने Cafe/Cloud Kitchen Business को शुरू करें Rajneesh Agarwal के साथ Personal Consultation में। Limited Slots Available!">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(255, 107, 0, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(255, 107, 0, 0.8);
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            from { transform: translateY(0); }
+            to { transform: translateY(-100px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+            animation: slideInRight 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero h1 .highlight {
+            color: #FFD700;
+            font-size: 56px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .hero .subheadline {
+            font-size: 24px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .hero-cta {
+            margin-top: 40px;
+        }
+
+        /* Countdown Timer */
+        .countdown-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            animation: glow 2s infinite;
+        }
+
+        .countdown-title {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .countdown-subtitle {
+            font-size: 16px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .time-box {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 20px 30px;
+            border-radius: 15px;
+            min-width: 100px;
+            animation: pulse 2s infinite;
+        }
+
+        .time-number {
+            font-size: 48px;
+            font-weight: bold;
+            display: block;
+            line-height: 1;
+        }
+
+        .time-label {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        /* Offer Section */
+        .offer-section {
+            background: #fff;
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #2d3748;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 20px;
+            color: #718096;
+            margin-bottom: 50px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .offer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .offer-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            animation: fadeInUp 1.4s ease-out;
+        }
+
+        .offer-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+
+        .offer-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .offer-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #2d3748;
+        }
+
+        .offer-card p {
+            color: #718096;
+            line-height: 1.8;
+        }
+
+        /* What You'll Get Section */
+        .benefits-section {
+            background: linear-gradient(135deg, #f6f9fc 0%, #e9ecef 100%);
+            padding: 80px 20px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .benefit-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .benefit-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .benefit-item h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #2d3748;
+        }
+
+        .benefit-item p {
+            color: #718096;
+            line-height: 1.6;
+        }
+
+        /* Bonuses Section */
+        .bonuses-section {
+            background: #fff;
+            padding: 80px 20px;
+        }
+
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .bonus-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .bonus-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #FFD700;
+            color: #333;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .bonus-card h4 {
+            font-size: 22px;
+            margin: 20px 0 15px;
+        }
+
+        .bonus-value {
+            font-size: 28px;
+            font-weight: bold;
+            color: #FFD700;
+            margin-top: 15px;
+        }
+
+        /* Social Proof Section */
+        .testimonials-section {
+            background: linear-gradient(135deg, #f6f9fc 0%, #e9ecef 100%);
+            padding: 80px 20px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .testimonial-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 3px solid #667eea;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #4a5568;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #2d3748;
+        }
+
+        .testimonial-role {
+            color: #718096;
+            font-size: 14px;
+        }
+
+        /* About Section */
+        .about-section {
+            background: #fff;
+            padding: 80px 20px;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .about-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .about-text {
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .about-text h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #2d3748;
+        }
+
+        .about-text p {
+            color: #4a5568;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            color: #718096;
+            font-size: 14px;
+        }
+
+        /* Limited Slots Section */
+        .slots-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .slots-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .slots-counter {
+            font-size: 72px;
+            font-weight: bold;
+            margin: 20px 0;
+            animation: pulse 1.5s infinite;
+        }
+
+        .slots-text {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: #fff;
+            padding: 80px 20px;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+
+        .faq-item {
+            background: #f7fafc;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .faq-question {
+            padding: 25px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            color: #2d3748;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            background: #edf2f7;
+        }
+
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: #4a5568;
+            line-height: 1.7;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 25px 25px;
+            max-height: 500px;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 50px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            border: none;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+        }
+
+        .cta-button-secondary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        /* Price Display */
+        .price-display {
+            margin: 30px 0;
+        }
+
+        .old-price {
+            font-size: 28px;
+            text-decoration: line-through;
+            color: #e53e3e;
+            opacity: 0.7;
+        }
+
+        .new-price {
+            font-size: 56px;
+            font-weight: bold;
+            color: #FFD700;
+            margin: 10px 0;
+        }
+
+        .price-note {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* Trust Badges */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+        }
+
+        .trust-icon {
+            font-size: 24px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero h1 .highlight {
+                font-size: 36px;
+            }
+
+            .hero .subheadline {
+                font-size: 18px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .countdown-timer {
+                gap: 10px;
+            }
+
+            .time-box {
+                padding: 15px 20px;
+                min-width: 80px;
+            }
+
+            .time-number {
+                font-size: 36px;
+            }
+
+            .stats {
+                flex-direction: column;
+            }
+        }
+
+        /* Video Section */
+        .video-section {
+            background: #f7fafc;
+            padding: 60px 20px;
+        }
+
+        .video-container {
+            max-width: 800px;
+            margin: 30px auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .video-container iframe {
+                height: 250px;
+            }
+        }
+
+        /* Guarantee Section */
+        .guarantee-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .guarantee-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        .guarantee-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .guarantee-text {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">🔥 केवल कुछ ही Slots बचे हैं!</div>
+                <h1>
+                    अपने Cafe/Cloud Kitchen Business को
+                    <span class="highlight">₹999 में Launch करें!</span>
+                </h1>
+                <p class="subheadline">
+                    Rajneesh Agarwal के साथ Personal One-to-One Consultation<br>
+                    और बनाएं Profitable Food Business बिना किसी Confusion के
+                </p>
+                
+                <div class="price-display">
+                    <div class="old-price">₹4,999</div>
+                    <div class="new-price">सिर्फ ₹999</div>
+                    <div class="price-note">⏰ यह Offer केवल अगले 1 घंटे के लिए Valid है!</div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#PAYMENT_LINK" class="cta-button">
+                        🚀 अभी Book करें ₹999 में
+                    </a>
+                </div>
+
+                <div class="trust-badges">
+                    <div class="trust-badge">
+                        <span class="trust-icon">✅</span>
+                        <span>100% Personalized Guidance</span>
+                    </div>
+                    <div class="trust-badge">
+                        <span class="trust-icon">⚡</span>
+                        <span>1 Hour Live Call</span>
+                    </div>
+                    <div class="trust-badge">
+                        <span class="trust-icon">🎁</span>
+                        <span>₹25,000 Worth Bonuses</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section class="countdown-section">
+        <div class="container">
+            <div class="countdown-title">⏰ यह Special Offer खत्म होने में बचा है:</div>
+            <div class="countdown-subtitle">इस समय के बाद Price ₹4,999 हो जाएगी!</div>
+            <div class="countdown-timer" id="countdown">
+                <div class="time-box">
+                    <span class="time-number" id="hours">00</span>
+                    <span class="time-label">घंटे</span>
+                </div>
+                <div class="time-box">
+                    <span class="time-number" id="minutes">00</span>
+                    <span class="time-label">मिनट</span>
+                </div>
+                <div class="time-box">
+                    <span class="time-number" id="seconds">00</span>
+                    <span class="time-label">सेकंड</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title">👇 देखें Rajneesh क्या बताएंगे आपको 👇</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/9HI2HI-7zjY" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Get in Consultation -->
+    <section class="offer-section">
+        <div class="container">
+            <h2 class="section-title">🎯 1 Hour की Consultation में क्या मिलेगा?</h2>
+            <p class="section-subtitle">Rajneesh आपको Personal Call पर Complete Roadmap देंगे</p>
+            
+            <div class="offer-grid">
+                <div class="offer-card">
+                    <div class="offer-icon">📋</div>
+                    <h3>Complete Business Plan</h3>
+                    <p>आपके Budget, Location और Vision के हिसाब से Step-by-Step Business Plan तैयार करेंगे</p>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-icon">🍽️</div>
+                    <h3>Menu Strategy</h3>
+                    <p>High-Profit वाले Menu Items, Pricing Strategy और Popular Dishes के बारे में Complete Guidance</p>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-icon">📍</div>
+                    <h3>Location Selection</h3>
+                    <p>सही Location कैसे चुनें, Rent Negotiation, और Setup के सभी Legal Aspects</p>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-icon">💰</div>
+                    <h3>Funding & Investment</h3>
+                    <p>कम से कम Investment में Business कैसे शुरू करें और Funding के सभी Options</p>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-icon">👨‍🍳</div>
+                    <h3>Chefless Model Setup</h3>
+                    <p>बिना Chef के Business कैसे चलाएं, Staff Training और Operations Management</p>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-icon">📈</div>
+                    <h3>Marketing & Sales</h3>
+                    <p>Day 1 से Customer कैसे लाएं, Social Media Marketing और Branding Strategies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">✨ इस Consultation से आपको क्या फायदा होगा?</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎯</div>
+                    <h4>Clear Roadmap</h4>
+                    <p>अब कोई Confusion नहीं - आपको पता होगा अगले 30 दिनों में क्या करना है</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">💡</div>
+                    <h4>Expert Guidance</h4>
+                    <p>5+ Years के Experience वाले Cafe Expert से Direct सीखें</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">💸</div>
+                    <h4>Money Saving</h4>
+                    <p>Costly Mistakes से बचें और हजारों रुपए Save करें</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">⚡</div>
+                    <h4>Fast Launch</h4>
+                    <p>30-40 दिनों में अपना Business Launch करने की Complete Strategy</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">📊</div>
+                    <h4>Profit Maximization</h4>
+                    <p>सीखें कैसे Day 1 से Profitable रहें</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">🤝</div>
+                    <h4>Personalized Solutions</h4>
+                    <p>Generic Advice नहीं - आपकी Specific Problems का Solution</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses Section -->
+    <section class="bonuses-section">
+        <div class="container">
+            <h2 class="section-title">🎁 साथ में मिलेंगे ये Premium Bonuses!</h2>
+            <p class="section-subtitle">₹25,000+ Worth की Resources बिल्कुल FREE</p>
+            
+            <div class="bonus-grid">
+                <div class="bonus-card">
+                    <div class="bonus-badge">BONUS #1</div>
+                    <div class="offer-icon">📱</div>
+                    <h4>Professional Menu Design Template</h4>
+                    <p>Ready-to-use Menu Templates जो Customers को आकर्षित करें</p>
+                    <div class="bonus-value">Worth ₹12,000</div>
+                </div>
+
+                <div class="bonus-card">
+                    <div class="bonus-badge">BONUS #2</div>
+                    <div class="offer-icon">📄</div>
+                    <h4>Staff Agreement Format</h4>
+                    <p>Legal Staff Agreement Templates - Hire करें बिना किसी Risk के</p>
+                    <div class="bonus-value">Worth ₹7,999</div>
+                </div>
+
+                <div class="bonus-card">
+                    <div class="bonus-badge">BONUS #3</div>
+                    <div class="offer-icon">⚡</div>
+                    <h4>Productivity Secrets Guide</h4>
+                    <p>Time Management और Business Operations को Optimize करने के Proven Methods</p>
+                    <div class="bonus-value">Worth ₹10,000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Limited Slots -->
+    <section class="slots-section">
+        <div class="container">
+            <h2 class="slots-title">⚠️ सिर्फ Limited Slots Available!</h2>
+            <div class="slots-counter">10</div>
+            <p class="slots-text">केवल 10 Consultations बचे हैं इस महीने के लिए<br>Slots भरने के बाद Next Month तक Wait करना पड़ेगा!</p>
+            <a href="#PAYMENT_LINK" class="cta-button cta-button-secondary">
+                अभी Book करें - ₹999 में
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">💬 देखें क्या कहते हैं हमारे Clients</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="https://via.placeholder.com/80" alt="Client" class="testimonial-image">
+                    <p class="testimonial-text">"Rajneesh की Guidance से मैंने 2 महीने में अपना Cloud Kitchen profitable बना दिया। उनकी Chefless Model Strategy kamaal की है!"</p>
+                    <div class="testimonial-author">Amit Sharma</div>
+                    <div class="testimonial-role">Cloud Kitchen Owner, Delhi</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="https://via.placeholder.com/80" alt="Client" class="testimonial-image">
+                    <p class="testimonial-text">"मुझे कोई idea नहीं था café कैसे शुरू करें। Rajneesh ने step-by-step सब कुछ समझाया और अब मेरा café successfully चल रहा है।"</p>
+                    <div class="testimonial-author">Priya Verma</div>
+                    <div class="testimonial-role">Cafe Owner, Jaipur</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="https://via.placeholder.com/80" alt="Client" class="testimonial-image">
+                    <p class="testimonial-text">"Best investment! ₹999 में मुझे itna value mila ki maine lakhs save kar liye costly mistakes se bachke। Highly recommended!"</p>
+                    <div class="testimonial-author">Rohit Malhotra</div>
+                    <div class="testimonial-role">QSR Owner, Mumbai</div>
+                </div>
+            </div>
+
+            <!-- Video Testimonial -->
+            <div class="video-container" style="margin-top: 50px;">
+                <iframe src="https://www.youtube.com/embed/dCmgp5_PucI" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Rajneesh -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">👨‍💼 आपके Mentor - Rajneesh Agarwal</h2>
+            
+            <div class="about-content">
+                <img src="https://rajneeshagarwal.com/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-28-at-3.35.15-PM.jpeg" alt="Rajneesh Agarwal" class="about-image">
+                
+                <div class="about-text">
+                    <h3>India's Leading Cafe Business Coach</h3>
+                    <p>Rajneesh Agarwal एक Passionate Food Business Coach और Successful Cafe Owner हैं जो Jaipur में base करते हैं।</p>
+                    
+                    <p>पिछले 5 सालों में उन्होंने Ground से Profitable Food Brands बनाए हैं - बिना किसी Theory के, सिर्फ Real-World Practical Strategies के साथ।</p>
+                    
+                    <p>उनका Mission है 2025 में 10,000 Foodpreneurs को Help करना ताकि वे अपना Food Business Successfully Start और Scale कर सकें।</p>
+                    
+                    <p><strong>Special Focus:</strong> Chefless Business Models, Low Investment Setup, और Fast Profitability</p>
+
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Successful Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50Cr+</div>
+                            <div class="stat-label">Revenue Generated</div>
+                        </div>
+                    </div>
+
+                    <a href="https://www.instagram.com/bussiness_with_rajneesh/" target="_blank" style="display: inline-block; margin-top: 20px; color: #667eea; font-weight: bold; text-decoration: none;">
+                        📸 Follow on Instagram →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee-section">
+        <div class="container">
+            <div class="guarantee-icon">🛡️</div>
+            <h2 class="guarantee-title">100% Value Guarantee</h2>
+            <p class="guarantee-text">
+                अगर आपको लगता है कि इस 1 Hour की Consultation से आपको ₹999 से ज्यादा की Value नहीं मिली, 
+                तो हम आपको पूरे पैसे वापस कर देंगे। No Questions Asked!<br><br>
+                <strong>क्योंकि हमें अपनी Service पर पूरा भरोसा है। 💯</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">❓ अक्सर पूछे जाने वाले सवाल</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Consultation कितने समय की होगी?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        यह एक Complete 1 Hour (60 Minutes) की Personal One-to-One Call होगी जहां Rajneesh आपके सभी सवालों के जवाब देंगे और Personalized Business Plan बनाएंगे।
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        क्या मुझे किसी पुराने Experience की जरूरत है?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        बिल्कुल नहीं! यह Consultation खासतौर से Beginners के लिए Design की गई है। चाहे आप Complete Zero से शुरू कर रहे हों, Rajneesh आपको Step-by-Step Guide करेंगे।
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Business Start करने में कितना पैसा लगेगा?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        आप ₹1 Lakh से भी Business शुरू कर सकते हैं। Consultation में Rajneesh आपके Budget के हिसाब से Best Options बताएंगे - Cloud Kitchen, Small Cafe या QSR Model।
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        क्या मुझे Chef की जरूरत होगी?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        नहीं! Rajneesh आपको Chefless Business Model सिखाएंगे जिसमें आप बिना Chef के भी Quality Food Serve कर सकते हैं और Monthly ₹30,000+ बचा सकते हैं।
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Consultation कैसे होगी - Online या Offline?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        यह Online Video Call के through होगी (Zoom/Google Meet) ताकि आप अपने घर से Comfortable रहकर Detailed Discussion कर सकें। Screen Share के through Documents भी Share किए जाएंगे।
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Payment के बाद Call कब Schedule होगी?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Payment होने के 24 Hours के अंदर हमारी Team आपसे Contact करेगी और आपकी Availability के हिसाब से Call Schedule कर देगी। आमतौर पर 2-3 दिनों के अंदर Call हो जाती है।
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        क्या Bonuses भी मिलेंगे?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        हां बिल्कुल! आपको ₹25,000+ Worth के Premium Resources मिलेंगे - Menu Design Templates, Staff Agreement Formats और Productivity Guides - सभी Downloadable Format में।
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        क्या यह सिर्फ Jaipur के लिए है?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        नहीं! यह Pan-India Service है। Rajneesh ने पूरे India में 500+ Clients को Help की है - Delhi, Mumbai, Bangalore, Pune - हर शहर में।
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="hero" style="padding: 60px 20px;">
+        <div class="container">
+            <h2 style="font-size: 42px; margin-bottom: 20px;">⏰ आखिरी मौका - Offer खत्म होने वाला है!</h2>
+            <p style="font-size: 20px; margin-bottom: 30px;">
+                अगले 1 घंटे में Book करें और पाएं ₹4,000 की Discount<br>
+                + ₹25,000 Worth की Bonuses FREE!
+            </p>
+            
+            <div class="price-display">
+                <div class="old-price">₹4,999</div>
+                <div class="new-price">आज सिर्फ ₹999</div>
+            </div>
+
+            <a href="#PAYMENT_LINK" class="cta-button cta-button-secondary" style="font-size: 24px; padding: 25px 60px;">
+                🚀 हां, मैं अभी Book करना चाहता हूं
+            </a>
+
+            <div class="trust-badges" style="margin-top: 30px;">
+                <div class="trust-badge">
+                    <span class="trust-icon">🔒</span>
+                    <span>100% Secure Payment</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-icon">💯</span>
+                    <span>Money Back Guarantee</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-icon">⚡</span>
+                    <span>Instant Access</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Countdown Timer (1 hour from page load)
+        function startCountdown() {
+            const endTime = new Date().getTime() + (60 * 60 * 1000); // 1 hour from now
+            
+            const timer = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = endTime - now;
+                
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+                
+                if (distance < 0) {
+                    clearInterval(timer);
+                    document.getElementById('countdown').innerHTML = '<h2>Offer Expired! अब ₹4,999 में Available है</h2>';
+                }
+            }, 1000);
+        }
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQs
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Open clicked FAQ if it wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Update all payment links
+        const PAYMENT_LINK = 'YOUR_COSMOFEED_PAYMENT_LINK_HERE';
+        document.querySelectorAll('a[href="#PAYMENT_LINK"]').forEach(link => {
+            link.href = PAYMENT_LINK;
+        });
+
+        // Start countdown on page load
+        window.addEventListener('load', startCountdown);
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#PAYMENT_LINK') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
